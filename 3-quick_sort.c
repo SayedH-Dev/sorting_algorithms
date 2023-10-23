@@ -61,6 +61,7 @@ int partition(int *array, size_t size, int left, int right)
 void recursive_sort(int *array, size_t size, int left, int right)
 {
 	int part;
+
 	if (right - left > 0)
 	{
 		part = partition(array, size, left, right);
@@ -71,10 +72,10 @@ void recursive_sort(int *array, size_t size, int left, int right)
 
 /**
  * quick_sort - Sort an array of integers.
- * 
+ *
  * @array: array of integers.
  * @size: size of the array.
- * 
+ *
  */
 void quick_sort(int *array, size_t size)
 {
